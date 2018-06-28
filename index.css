@@ -1,0 +1,34 @@
+body {
+  background-color: #efefef;
+  font-family: "MS PGothic";
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.title {
+  color: #ff0000;
+  font-size: large;
+}
+
+.thread {
+  padding: 0 1em;
+}
+
+
+.thread .meta .name {
+  color: #4f8000;
+}
+
+.thread .message {
+  padding: 1ex 0 0 2em;
+}
+
+.ord, .key {
+  display: none;
+}
