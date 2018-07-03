@@ -11,21 +11,21 @@ a:hover {
   text-decoration: underline;
 }
 
-.title {
+#title {
   color: #ff0000;
   font-size: large;
 }
 
-.thread {
+#thread {
   padding: 0 1em;
 }
 
 
-.thread .meta .name {
+#thread .meta .name {
   color: #4f8000;
 }
 
-.thread .message {
+#thread .message {
   padding: 1ex 0 0 2em;
 }
 
