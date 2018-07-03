@@ -79,7 +79,7 @@ function res_split(res, resnum)
       min = Number(m[1]);
       max = Number(m[2]);
       if (min > max) {
-	tmp = max; max = min; min = max
+	tmp = max; max = min; min = tmp;
       }
       for (let i = min; i <= max; i++) {
 	r.push(i);
@@ -215,11 +215,12 @@ $(function () {
     let key = $(this).val();
     load_thread(bbs, key);
   });
-  $(window).on("load hashchange", function () {
-    if (location.hash != "") {
-      let x = location.hash.split("/");
-      load_thread(x[1], x[2], x[3]);
-    }
-  });
   init_index();
+});
+
+$(window).on("load hashchange", function () {
+  if (location.hash != "") {
+    let x = location.hash.split("/");
+    load_thread(x[1], x[2], x[3]);
+  }
 });
